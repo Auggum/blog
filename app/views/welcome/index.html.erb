@@ -1,12 +1,38 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'New article', new_article_path %>
+<h1>Pin Needle</h1>
 
-<%= link_to 'My Blog', controller: 'articles' %>
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+  Date and Time.
+</button>
 
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
-  ...
+<p id="demo"></p>
+
+
+
+<form>
+  <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; :#999;
+      -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold;
+      background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;
+  " type="button" value="Dollar General?" onclick="window.location.href='https://www.dollargeneral.com/'" />
+</form>
+
+<form>
+  <input class="MyButton" type="button" value="Facebook?" onclick="window.location.href='https://www.facebook.com/'" />
+</form>
+
+
+
+<%= link_to 'New Rival', new_competitor_path %>
+<br>
+</br>
+
+
+<%= link_to 'Competitors Info', controller: 'competitors' %>
+
+<%= form_with scope: :competitors, url: competitors_path, local: true do |form| %>
+
 <% end %>
 
-<%= link_to 'Back', articles_path %>
+
 
 

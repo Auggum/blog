@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get 'competitors/find_info'
 
-  resources :articles do
-    resources :comments
-  end
+  resources :competitor
+
+
 
   root 'welcome#index'
 
